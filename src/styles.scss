@@ -1,0 +1,77 @@
+/* You can add global styles to this file, and also import other style files */
+// https://www.color-hex.com/color-palette/92422
+$primary : #60965b; //#54425e; //#684674;
+$primary-hover: darken($primary, 10%);
+$primary-background-hover: lighten($primary, 30%);
+$border-radius: 5px;
+
+$white: #ffffff;
+$black: #000000;
+
+.primary {
+  color: $primary;
+}
+
+.primary-bg {
+  background: $primary;
+  border: 1px solid $primary;
+}
+
+.white {
+  color: $white;
+}
+
+.days-active {
+  background-color: $primary;
+  color: $white;
+}
+
+.calendar-btn {
+  border-radius: 3px;
+  text-decoration: none;
+
+  &:hover {
+    background: darken($primary, 10%);
+    outline: none;
+  }
+}
+
+button:focus {
+  outline: none;
+}
+
+.calendar-container {
+  width: 320px;
+  height: 360px;
+  box-shadow: 0 2px 4px -1px rgba(0, 0, 0, .2), 0 4px 5px 0 rgba(0, 0, 0, .14), 0 1px 10px 0 rgba(0, 0, 0, .12);
+  border-radius: 5px;
+}
+
+.w-45 {
+  width: 45%;
+}
+
+.date:hover {
+  color: $primary-hover;
+  background-color: $primary-background-hover;
+  cursor: pointer;
+  border-radius: $border-radius;
+}
+
+.date {
+  &.active {
+    background: $primary;
+    color: $white;
+    border-radius: $border-radius;
+
+    &:hover {
+      background: $primary;
+      color: $white;
+      border-radius: $border-radius;
+    }
+  }
+}
+
+.divider {
+  border-color: #efefef;
+}

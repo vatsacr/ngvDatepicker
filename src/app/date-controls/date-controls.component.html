@@ -1,0 +1,17 @@
+<div class="date-controls-container pt-4 pr-4">
+  <div class="calendar-accordion d-inline-block">
+    <button class="calendar-btn primary-bg white p-2" [ngClass]="isDaysOpen?'accordion-active':''"
+      (click)="toggleAccordionDisplay('D')">Days</button>
+    <button class="calendar-btn primary-bg white p-2" [ngClass]="isYearsOpen?'accordion-active':''"
+      (click)="toggleAccordionDisplay('Y')">Years</button>
+  </div>
+  <div class="d-inline-block text-center ml-5 date-display-control w-45">
+    <h3>{{monthName}} {{year}}</h3>
+    <button class="fa fa-arrow-circle-left date-nav-btn" (click)="previousMonth()"></button>
+    <button class="fa fa-arrow-circle-right date-nav-btn" (click)="nextMonth()"></button>
+  </div>
+</div>
+
+<years *ngIf="isYearsOpen" (sendYear)=getYear($event) [receivedYear]="year"></years>
+<days *ngIf="isDaysOpen" [month]="month" [year]="year" (sendDate)="getDate($event)" [fullDate]="fullDate.getDate()">
+</days>

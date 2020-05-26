@@ -1,0 +1,17 @@
+@import '../../styles.scss';
+
+.year-navigator {
+  border-bottom: 1px solid #efefef;
+  margin-bottom: 0.5em;
+}
+
+.year-navigator-btn {
+  color: $primary;
+  border: none;
+  border-radius: $border-radius;
+  background: $white;
+
+  &:hover {
+    background: $primary-background-hover;
+  }
+}

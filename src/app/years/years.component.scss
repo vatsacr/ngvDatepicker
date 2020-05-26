@@ -1,0 +1,7 @@
+@import '../../styles.scss';
+
+.years:hover {
+  color: $primary-hover;
+  background-color: $primary-background-hover;
+  cursor: pointer;
+}

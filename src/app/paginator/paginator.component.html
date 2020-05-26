@@ -1,0 +1,7 @@
+<div class="year-navigator text-center p-1">
+  <button class="fa fa-chevron-left d-inline-block year-navigator-btn p-1" (click)="previousPage()"
+    *ngIf="isPreviousHidden()"></button>
+  <h6 class="d-inline-block w-50 primary">{{currentValue}} - {{endValue-1}}</h6>
+  <button class="fa fa-chevron-right d-inline-block year-navigator-btn p-1" (click)="nextPage()"
+    *ngIf="isNextHidden()"></button>
+</div>

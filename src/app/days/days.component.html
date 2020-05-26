@@ -1,0 +1,6 @@
+<div class="days-container pt-2 pl-2">
+  <div class="days primary days-number date" *ngFor="let day of daysArray" (click)="setDay(day)"
+    [ngClass]="{'active':setActive(day)}">
+    {{day}}
+  </div>
+</div>

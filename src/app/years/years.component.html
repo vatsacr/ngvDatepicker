@@ -1,0 +1,5 @@
+<div class="years-container p-2">
+  <paginator (sendCurrentYears)="getCurrentYears($event)" [currentYear]="receivedYear"></paginator>
+  <div class="d-inline-block p-2 w-25 years text-center date primary" [ngClass]="{'active':selectedYear(year)}"
+    *ngFor="let year of years" (click)="setYear(year)">{{year}}</div>
+</div>
