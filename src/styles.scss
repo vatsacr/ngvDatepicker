@@ -1,6 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 // https://www.color-hex.com/color-palette/92422
-$primary : #60965b; //#54425e; //#684674;
+$primary: #43693f; //#54425e; //#684674;
 $primary-hover: darken($primary, 10%);
 $primary-background-hover: lighten($primary, 30%);
 $border-radius: 5px;
@@ -43,7 +43,8 @@ button:focus {
 .calendar-container {
   width: 320px;
   height: 360px;
-  box-shadow: 0 2px 4px -1px rgba(0, 0, 0, .2), 0 4px 5px 0 rgba(0, 0, 0, .14), 0 1px 10px 0 rgba(0, 0, 0, .12);
+  box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.14),
+    0 1px 10px 0 rgba(0, 0, 0, 0.12);
   border-radius: 5px;
 }
 

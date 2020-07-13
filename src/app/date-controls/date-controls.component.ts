@@ -89,7 +89,6 @@ export class DateControlsComponent implements OnInit {
   getYear(year: number) {
     this.year = year;
     this.combineDate();
-    console.log(this.year);
   }
   getDate(date: number) {
     this.date = date;

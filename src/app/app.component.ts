@@ -2,10 +2,10 @@ import { Component } from "@angular/core";
 
 @Component({
   selector: "app-root",
-  templateUrl: "./datepicker.component.html",
-  styleUrls: ["./datepicker.component.scss"],
+  templateUrl: "./app.component.html",
+  styleUrls: ["./app.component.scss"],
 })
-export class DatepickerComponent {
+export class AppComponent {
   date = new Date("11/08/2015");
   selectedDate(date: Date) {
     this.date = date;

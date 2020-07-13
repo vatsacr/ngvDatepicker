@@ -2,7 +2,7 @@ import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
 
 import { AppRoutingModule } from "./app-routing.module";
-import { DatepickerComponent } from "./datepicker.component";
+import { AppComponent } from "./app.component";
 import { DaysComponent } from "./days/days.component";
 import { YearsComponent } from "./years/years.component";
 import { DateControlsComponent } from "./date-controls/date-controls.component";
@@ -10,7 +10,7 @@ import { PaginatorComponent } from "./paginator/paginator.component";
 
 @NgModule({
   declarations: [
-    DatepickerComponent,
+    AppComponent,
     DaysComponent,
     YearsComponent,
     DateControlsComponent,
@@ -18,6 +18,6 @@ import { PaginatorComponent } from "./paginator/paginator.component";
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
-  bootstrap: [DatepickerComponent],
+  bootstrap: [AppComponent],
 })
-export class DatepickerModule {}
+export class AppModule {}
