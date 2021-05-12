@@ -30,6 +30,7 @@
     "tslib": "^1.14.1",
     "webpack-subresource-integrity": "^1.5.2",
     "websocket-extensions": "^0.1.4",
+    "xmlhttprequest-ssl": "^1.6.2",
     "yargs-parser": "^20.2.7",
     "zone.js": "~0.9.1"
   },
